@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+@import '@fontsource/jetbrains-mono';
+
+@theme {
+    --font-jetbrains-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+    body, html {
+        @apply h-full;
+    }
+
+    body {
+        @apply bg-slate-800;
+        @apply text-white;
+        @apply font-jetbrains-mono;
+    }
+
+    #root {
+        @apply h-fit;
+    }
+}
