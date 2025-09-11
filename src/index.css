@@ -3,17 +3,35 @@
 
 @theme {
     --font-jetbrains-mono: "JetBrains Mono", monospace;
+    --animate-blink: blink 1s both infinite;
+
+    @keyframes blink {
+        100% {
+            opacity: 100%;
+        }
+
+        50%{
+            opacity: 50%;
+        }
+
+        0% {
+            opacity: 0%;
+        }
+    }
 }
 
 @layer base {
+    html {
+        @apply snap-y snap-mandatory;
+    }
+
     body, html {
         @apply h-full;
     }
 
     body {
-        @apply bg-slate-800;
-        @apply text-white;
-        @apply font-jetbrains-mono;
+        background-color: rgb(35, 21, 60);
+        @apply text-white font-jetbrains-mono;
     }
 
     #root {

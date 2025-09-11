@@ -1,7 +1,7 @@
 export default function Header() {
     return (
-        <header className="w-full h-fit sticky top-0 px-5 pt-2">
-            <div className="bg-green-800 h-12 w-full rounded flex justify-between p-8 opacity-70 items-center">
+        <header className="w-full h-fit sticky top-0 px-5 pt-1 z-10">
+            <div className="bg-transparent h-10 w-full rounded flex justify-between p-8 items-center">
                 <h2 className="overflow-auto">
                     Ben' portfolio
                 </h2>

@@ -1,7 +1,8 @@
 export default function About({id}: {id:string}) {
 
     return (
-        <section className="flex flex-col md:flex-row rounded p-5 gap-5" id={id}>
+        <section className="h-screen items-end flex" id={id}>
+            <div className="flex flex-col md:flex-row rounded p-5 gap-5 snap-center">
             <section className="flex flex-col gap-5 flex-1">
                 <AboutBlock title="Hello World!" iconSrc=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam et odio. Laudantium voluptatum quasi facilis eum consequuntur distinctio mollitia. Voluptatem autem officia quam ullam quia aspernatur enim repudiandae id.</p></AboutBlock>
                 <AboutBlock title="Hello World!" iconSrc=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam et odio. Laudantium voluptatum quasi facilis eum consequuntur distinctio mollitia. Voluptatem autem officia quam ullam quia aspernatur enim repudiandae id.</p></AboutBlock>
@@ -9,9 +10,10 @@ export default function About({id}: {id:string}) {
                 <AboutBlock title="Hello World!" iconSrc=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam et odio. Laudantium voluptatum quasi facilis eum consequuntur distinctio mollitia. Voluptatem autem officia quam ullam quia aspernatur enim repudiandae id.</p></AboutBlock>
                 <AboutBlock title="Hello World!" iconSrc=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quam et odio. Laudantium voluptatum quasi facilis eum consequuntur distinctio mollitia. Voluptatem autem officia quam ullam quia aspernatur enim repudiandae id.</p></AboutBlock>
             </section>
-            <section className="flex-1">
-                hello
+            <section className="flex-1 snap-center md:snap-none md:h-full">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quasi, suscipit cupiditate voluptatem totam, esse sunt impedit nesciunt, ullam officiis labore perspiciatis commodi mollitia adipisci molestiae similique laboriosam facilis minus!</p>
             </section>
+            </div>
         </section>
     )
 }
