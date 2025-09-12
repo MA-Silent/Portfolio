@@ -65,8 +65,8 @@ export default function Home({ id }: { id: string }) {
     }, [])
 
     return (
-        <section className="h-screen justify-center items-center flex" id={id} ref={myRef}>
-            <div className="absolute top-[47%] flex justify-center font-bold text-xl flex-col snap-center">
+        <section className="h-screen justify-center items-center flex snap-center" id={id} ref={myRef}>
+            <div className="absolute top-[47%] flex justify-center font-bold text-xl flex-col">
 
                 <div className="text-center text-white/50 text-2xl">
                     I am <span className="text-emerald-500/90">Ben Ruitenbeek</span>
