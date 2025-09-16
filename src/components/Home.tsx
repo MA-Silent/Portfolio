@@ -5,13 +5,9 @@ import * as THREE from 'three'
 import BIRDS from 'vanta/dist/vanta.net.min'
 
 const descriptions = [
-    "dynamic React developer",
-    "versatile TypeScript developer",
-    "nimble Node.js developer",
-    "sleek Tailwind CSS designer",
-    "adaptive Fullstack developer",
-    "creative Problem solver",
-    "curious lifelong learner"
+    "Fullstack Developer",
+    "Linux User",
+    "Avid Learner"
 ]
 
 export default function Home({ id }: { id: string }) {
@@ -75,7 +71,7 @@ export default function Home({ id }: { id: string }) {
                 </div>
 
                 <div className="text-4xl text-center flex">
-                    Im a <span className="pl-4 text-transparent bg-clip-text bg-gradient-to-b from-[#b8e9d4] via-[#f4985a] to-[#12243f] after:content-['|'] after:animate-blink" ref={ref}></span>
+                    A <span className="pl-4 text-transparent bg-clip-text bg-gradient-to-b from-[#6eee87] via-green-500 to-green-600 after:content-['|'] after:animate-blink" ref={ref}></span>
                 </div>
 
             </div>
