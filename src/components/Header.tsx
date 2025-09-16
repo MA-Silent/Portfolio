@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <header className="w-full h-fit sticky top-0 px-5 pt-1 z-10">
-            <div className="bg-sky-400/20 h-10 w-full rounded flex justify-between p-6 items-center">
+            <div className="bg-black/10 md:bg-sky-400/20 h-10 w-full rounded flex justify-between p-6 items-center">
                 <h2 className="overflow-auto">
                     Ben's portfolio
                 </h2>
