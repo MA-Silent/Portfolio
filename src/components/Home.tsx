@@ -42,7 +42,7 @@ export default function Home({ id }: { id: string }) {
         writeWord();
     }, [])
 
-    const [vantaEffect, setVantaEffect] = useState<any>(null);
+    // const [vantaEffect, setVantaEffect] = useState<any>(null);
     const myRef = useRef<HTMLElement>(null);
     // useEffect(() => {
     //     if (!vantaEffect) {
