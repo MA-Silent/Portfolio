@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import * as THREE from 'three'
 //@ts-ignore
 import BIRDS from 'vanta/dist/vanta.net.min'
+
 const descriptions = [
     "dynamic React developer",
     "versatile TypeScript developer",
@@ -12,6 +13,7 @@ const descriptions = [
     "creative Problem solver",
     "curious lifelong learner"
 ]
+
 export default function Home({ id }: { id: string }) {
 
     const ref = useRef<HTMLSpanElement>(null)
@@ -73,7 +75,7 @@ export default function Home({ id }: { id: string }) {
                 </div>
 
                 <div className="text-4xl text-center flex">
-                    Im a <span className="pl-4 text-transparent bg-clip-text bg-gradient-to-t from-green-700 via-emerald-500 to-green-800 after:content-['|'] after:animate-blink" ref={ref}></span>
+                    Im a <span className="pl-4 text-transparent bg-clip-text bg-gradient-to-b from-[#b8e9d4] via-[#f4985a] to-[#12243f] after:content-['|'] after:animate-blink" ref={ref}></span>
                 </div>
 
             </div>
