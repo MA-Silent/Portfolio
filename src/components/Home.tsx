@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react"
-//@ts-ignore
-// import * as THREE from 'three'
-//@ts-ignore
-// import BIRDS from 'vanta/dist/vanta.net.min'
+import { useEffect, useRef, useState } from "react"
+// @ts-ignore
+import * as THREE from 'three'
+// @ts-ignore
+import BIRDS from 'vanta/dist/vanta.net.min'
 
 const descriptions = [
     "dynamic React developer",
@@ -42,29 +42,29 @@ export default function Home({ id }: { id: string }) {
         writeWord();
     }, [])
 
-    // const [vantaEffect, setVantaEffect] = useState<any>(null);
+    const [vantaEffect, setVantaEffect] = useState<any>(null);
     const myRef = useRef<HTMLElement>(null);
-    // useEffect(() => {
-    //     if (!vantaEffect) {
-    //         setVantaEffect(BIRDS({
-    //             el: myRef.current,
-    //             mouseControls: false,
-    //             touchControls: false,
-    //             gyroControls: false,
-    //             minHeight: 200.00,
-    //             minWidth: 200.00,
-    //             scale: 1.00,
-    //             scaleMobile: 1.00,
-    //             color: 0x2fff00,
-    //             THREE: THREE
-    //         }))
-    //     }
+    useEffect(() => {
+        if (!vantaEffect) {
+            setVantaEffect(BIRDS({
+                el: myRef.current,
+                mouseControls: false,
+                touchControls: false,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x2fff00,
+                THREE: THREE
+            }))
+        }
 
-    //     return () => {
-    //         if (vantaEffect) vantaEffect.destroy()
-    //     }
+        return () => {
+            if (vantaEffect) vantaEffect.destroy()
+        }
 
-    // }, [])
+    }, [])
 
     return (
         <section className="h-screen justify-center items-center flex snap-center" id={id} ref={myRef}>
