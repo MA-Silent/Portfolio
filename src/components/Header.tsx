@@ -10,6 +10,7 @@ export default function Header() {
                     <NavButton href="#home" children={"Home"} />
                     <NavButton href="#about" children={"About"} />
                     <NavButton href="#skills" children={"Skills"} />
+                    <NavButton href="#projects" children={"Projects"} />
                 </nav>
             </div>
         </header>

@@ -24,6 +24,16 @@ function AboutBlock({ children, title, iconSrc }: React.PropsWithChildren & { ti
     )
 }
 
+function PersonAbout() {
+    return (
+        <section className="flex flex-1 flex-col snap-center md:snap-align-none md:h-full items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3m972e8FEvBi7ETC03avlJcZDg8nT9dWLSw&s" alt="profilePicture" className="h-80 w-80 rounded-full" />
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quasi, suscipit cupiditate voluptatem totam, esse sunt impedit nesciunt, ullam officiis labore perspiciatis commodi mollitia adipisci molestiae similique laboriosam facilis minus!</p>
+        </section>
+    )
+
+}
+
 function AboutStack() {
     if (window.innerWidth <= 768) {
         return (
@@ -35,9 +45,7 @@ function AboutStack() {
                     <AboutBlock title="Vite" iconSrc="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg"><p>I like using Vite because it makes setting up projects simple and gives me a fast development environment. It reduces unnecessary setup work and lets me focus more on building and experimenting with new ideas.</p></AboutBlock>
                     <AboutBlock title="Node Package Manager" iconSrc="npmlogo.svg"><p>I use npm mainly because of its huge library of packages that work well with TypeScript and React. It makes development smoother and gives me the flexibility to explore different tools and features in my projects.</p></AboutBlock>
                 </section>
-                <section className="flex flex-1 flex-col snap-center md:snap-align-none md:h-full">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quasi, suscipit cupiditate voluptatem totam, esse sunt impedit nesciunt, ullam officiis labore perspiciatis commodi mollitia adipisci molestiae similique laboriosam facilis minus!</p>
-                </section>
+                <PersonAbout />
             </>
         )
     } else {
@@ -50,9 +58,7 @@ function AboutStack() {
                     <AboutBlock title="Vite" iconSrc="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vitejs-logo.svg"><p>I like using Vite because it makes setting up projects simple and gives me a fast development environment. It reduces unnecessary setup work and lets me focus more on building and experimenting with new ideas.</p></AboutBlock>
                     <AboutBlock title="Node Package Manager" iconSrc="npmlogo.svg"><p>I use npm mainly because of its huge library of packages that work well with TypeScript and React. It makes development smoother and gives me the flexibility to explore different tools and features in my projects.</p></AboutBlock>
                 </section>
-                <section className="flex flex-1 flex-col snap-center md:snap-align-none md:h-full">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quasi, suscipit cupiditate voluptatem totam, esse sunt impedit nesciunt, ullam officiis labore perspiciatis commodi mollitia adipisci molestiae similique laboriosam facilis minus!</p>
-                </section>
+                <PersonAbout />
             </section>
         )
     }
