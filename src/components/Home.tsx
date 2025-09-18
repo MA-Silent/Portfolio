@@ -71,7 +71,7 @@ export default function Home({ id }: { id: string }) {
                 </div>
 
                 <div className="text-4xl text-center flex">
-                    A <span className="pl-4 text-transparent bg-clip-text bg-gradient-to-b from-[#6eee87] via-green-500 to-green-600 after:content-['|'] after:animate-blink" ref={ref}></span>
+                    A <span className="pl-4 text-transparent bg-clip-text bg-gradient-to-b  to-[#239eab] from-[#74deee] after:content-['|'] after:animate-blink" ref={ref}></span>
                 </div>
 
             </div>
