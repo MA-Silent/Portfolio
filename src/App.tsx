@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
-const test = ["tes","t","dfg","jhgf","hello","world","fred","is","gay"];
+const test = ["hello", "world",];
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
       <main className="h-full">
         <Home id="home" />
         <About id="about" />
-        <Skills array={test} id="skills" />
+        <Skills array={test} id="skills" type="name" />
         <Projects id="projects" />
       </main>
     </>

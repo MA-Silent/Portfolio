@@ -26,7 +26,7 @@ function AboutBlock({ children, title, iconSrc }: React.PropsWithChildren & { ti
 
 function PersonAbout() {
     return (
-        <section className="flex flex-1 flex-col snap-center md:snap-align-none md:h-full items-center">
+        <section className="flex flex-1 flex-col snap-center md:snap-align-none md:h-full justify-center items-center">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3m972e8FEvBi7ETC03avlJcZDg8nT9dWLSw&s" alt="profilePicture" className="h-80 w-80 rounded-full" />
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quasi, suscipit cupiditate voluptatem totam, esse sunt impedit nesciunt, ullam officiis labore perspiciatis commodi mollitia adipisci molestiae similique laboriosam facilis minus!</p>
         </section>
