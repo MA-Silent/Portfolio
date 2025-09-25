@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
-const test = ["hello", "world",];
+import { projects, skills } from "./util/constants";
 
 export default function App() {
   return (
@@ -13,8 +13,8 @@ export default function App() {
       <main className="h-full">
         <Home id="home" />
         <About id="about" />
-        <Skills array={test} id="skills" type="name" />
-        <Projects id="projects" />
+        <Skills array={skills} id="skills" type="name" />
+        <Projects id="projects" projectArray={projects} />
       </main>
     </>
   )
