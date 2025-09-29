@@ -2,7 +2,7 @@ export default function About({ id }: { id: string }) {
 
     return (
         <section className="h-screen items-end flex snap-start md:snap-center" id={id}>
-            <div className="flex flex-col md:flex-row rounded p-5 gap-5 h-screen overflow-auto md:pb-2 md:items-end">
+            <div className="flex flex-col md:flex-row rounded p-5 gap-5 h-screen overflow-auto md:pb-2">
                 <AboutStack />
             </div>
         </section>
@@ -50,7 +50,7 @@ function AboutStack() {
         )
     } else {
         return (
-            <section className="grid grid-cols-2 gap-5 overflow-auto">
+            <section className="grid grid-cols-2 gap-5 overflow-auto mt-12">
                 <section className="flex flex-col gap-5 flex-1">
                     <AboutBlock title="Arch Linux" iconSrc="archlogo.svg"><p>I use Arch Linux because I appreciate its minimal default setup, which allows me to keep my system clean and efficient. When I need additional software, I can reliably find it through the AUR or the official repositories, giving me both flexibility and control over my environment.</p></AboutBlock>
                     <AboutBlock title="Typescript" iconSrc="tslogo.svg"><p>My preferred programming language is TypeScript, which I use most often because of its strong type system and advanced IntelliSense. It makes my code feel more structured and helps me write cleaner, more reliable projects.</p></AboutBlock>
