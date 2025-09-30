@@ -14,7 +14,7 @@ export default function App() {
         <Home id="home" />
         <Projects id="projects" projectArray={projects} />
         <About id="about" />
-        <Skills array={skills} id="skills" type="name" />
+        <Skills array={skills} id="skills" />
       </main>
     </>
   )
