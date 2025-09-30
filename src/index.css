@@ -22,7 +22,7 @@
 
 @layer base {
     html {
-        @apply snap-y snap-mandatory;
+        @apply snap-y snap-mandatory scroll-smooth;
     }
 
     body, html {

@@ -12,9 +12,9 @@ export default function App() {
       <Header />
       <main className="h-full">
         <Home id="home" />
+        <Projects id="projects" projectArray={projects} />
         <About id="about" />
         <Skills array={skills} id="skills" type="name" />
-        <Projects id="projects" projectArray={projects} />
       </main>
     </>
   )

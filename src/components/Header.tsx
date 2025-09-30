@@ -11,9 +11,9 @@ export default function Header() {
                 </h2>
                     <nav className="flex gap-5 not-sm:hidden">
                         <NavButton href="#home" children={"Home"} />
+                        <NavButton href="#projects" children={"Projects"} />
                         <NavButton href="#about" children={"About"} />
                         <NavButton href="#skills" children={"Skills"} />
-                        <NavButton href="#projects" children={"Projects"} />
                     </nav>
     
                     <div className="size-8 relative sm:hidden">
