@@ -64,7 +64,7 @@ export default function Home({ id }: { id: string }) {
 
     return (
         <section className="h-screen justify-center items-center flex snap-center" id={id} ref={myRef}>
-            <div className="absolute top-[47%] flex justify-center font-bold text-xl flex-col">
+            <div className="absolute top-[47%] flex justify-center font-bold text-xl flex-col items-center">
 
                 <div className="text-center text-white/50 text-2xl">
                     I am <span className="text-emerald-500/90">Ben Ruitenbeek</span>
@@ -73,7 +73,7 @@ export default function Home({ id }: { id: string }) {
                 <div className="text-4xl text-center flex">
                     A <span className="pl-4 text-transparent bg-clip-text bg-gradient-to-b  to-[#239eab] from-[#74deee] after:content-['|'] after:animate-blink" ref={ref}></span>
                 </div>
-
+                <a href="#projects"><button className="bg-neutral-500/30 rounded-2xl border border-neutral-200 p-2 mt-8 hover:bg-neutral-500/70">See Projects</button></a>
             </div>
         </section>
     )
