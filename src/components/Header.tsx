@@ -5,12 +5,12 @@ export default function Header() {
 
     return (
         <>
-            <div className={`fixed h-fit w-1/2 bg-neutral-700/70 s z-50 ${(checked ? "visible" : "invisible")}`}>
-                <nav className="flex flex-col gap-5">
-                    <NavButton href="#home" children={"Home"} />
-                    <NavButton href="#projects" children={"Projects"} />
-                    <NavButton href="#about" children={"About"} />
-                    <NavButton href="#skills" children={"Skills"} />
+            <div className={`fixed h-fit w-1/2 bg-neutral-700/70 z-20 inset-0 m-auto  ${(checked ? "visible" : "invisible")}`}>
+                <nav className={`flex flex-col gap-5 scale-0 transition-all ${(checked) ? "scale-100" : "scale-0"}`}>
+                    <NavButton href="#home"><button className="h-full w-full text-left" onClick={()=>{setChecked(false)}}>Home</button></NavButton>
+                    <NavButton href="#projects"><button className="h-full w-full text-left" onClick={()=>{setChecked(false)}}>Projects</button></NavButton>
+                    <NavButton href="#about"><button className="h-full w-full text-left" onClick={()=>{setChecked(false)}}>About</button></NavButton>
+                    <NavButton href="#skills"><button className="h-full w-full text-left" onClick={()=>{setChecked(false)}}>Skills</button></NavButton>
                 </nav>
             </div>
             <header className="w-full h-fit sticky top-0 px-5 pt-1 z-10">

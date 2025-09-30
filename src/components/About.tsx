@@ -1,9 +1,25 @@
+import { useEffect, useRef } from "react"
 import { AboutText } from "../util/constants"
+
+const options : IntersectionObserverInit = {root:null, rootMargin:"0px", threshold: 0.1};
+
+const observer = new IntersectionObserver((entries)=>{
+    for (const entry of entries){
+        console.log(entry.isIntersecting)
+        entry.target.classList.toggle("visible", entry.isIntersecting)
+    }
+}, options)
 
 export default function About({ id }: { id: string }) {
 
+    const ref = useRef<HTMLElement>(null);
+
+    useEffect(()=>{
+        observer.observe(ref.current!);
+    },[])
+
     return (
-        <section className="h-screen items-end flex snap-start md:snap-center" id={id}>
+        <section className="h-screen items-end flex snap-start md:snap-center group" id={id} ref={ref}>
             <div className="flex flex-col md:flex-row rounded p-5 gap-5 h-screen overflow-auto md:pb-2">
                 <AboutStack />
             </div>
@@ -44,7 +60,7 @@ function AboutStack() {
     if (window.innerWidth <= 768) {
         return (
             <>
-                <section className="flex flex-col gap-5 flex-1">
+                <section className="flex flex-col gap-5 flex-1 group-[.visible]:scale-100 transition-all scale-0 delay-150">
                     <AboutBlock title="Arch Linux" iconSrc="logos/archlogo.svg"><p>I use Arch Linux because I appreciate its minimal default setup, which allows me to keep my system clean and efficient. When I need additional software, I can reliably find it through the AUR or the official repositories, giving me both flexibility and control over my environment.</p></AboutBlock>
                     <AboutBlock title="Typescript" iconSrc="logos/tslogo.svg"><p>My preferred programming language is TypeScript, which I use most often because of its strong type system and advanced IntelliSense. It makes my code feel more structured and helps me write cleaner, more reliable projects.</p></AboutBlock>
                     <AboutBlock title="React" iconSrc="logos/reactlogo.png"><p>I enjoy working with React because it provides a clear and flexible way to build interactive applications. Its component-based approach makes organizing projects easier and gives me the chance to learn modern front-end practices.</p></AboutBlock>
@@ -57,7 +73,7 @@ function AboutStack() {
     } else {
         return (
             <section className="grid grid-cols-2 gap-5 overflow-auto mt-12">
-                <section className="flex flex-col gap-5 flex-1">
+                <section className="flex flex-col gap-5 flex-1 group-[.visible]:scale-100 transition-all scale-75 delay-100">
                     <AboutBlock title="Arch Linux" iconSrc="logos/archlogo.svg"><p>I use Arch Linux because I appreciate its minimal default setup, which allows me to keep my system clean and efficient. When I need additional software, I can reliably find it through the AUR or the official repositories, giving me both flexibility and control over my environment.</p></AboutBlock>
                     <AboutBlock title="Typescript" iconSrc="logos/tslogo.svg"><p>My preferred programming language is TypeScript, which I use most often because of its strong type system and advanced IntelliSense. It makes my code feel more structured and helps me write cleaner, more reliable projects.</p></AboutBlock>
                     <AboutBlock title="React" iconSrc="logos/reactlogo.png"><p>I enjoy working with React because it provides a clear and flexible way to build interactive applications. Its component-based approach makes organizing projects easier and gives me the chance to learn modern front-end practices.</p></AboutBlock>
