@@ -6,7 +6,7 @@ export default function Skills({ array, id }: { array: Array<skill>, id: string 
       {array.map((skill, idx) => {
         return (
           <div className="p-4 bg-gray-600 text-center flex flex-col items-center justify-center rounded-2xl gap-2 mt-12" key={idx}>
-            {skill.image ? <img src={skill.image} alt="skillImage" className="size-32"/> : null}
+            {skill.imageSrc ? <img src={skill.imageSrc} alt="skillImage" className="size-32"/> : null}
             {skill.title}
           </div>
         )
