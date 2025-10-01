@@ -6,7 +6,8 @@ const options : IntersectionObserverInit = {root:null, rootMargin:"0px", thresho
 
 const observer = new IntersectionObserver((entries)=>{
     for (const entry of entries){
-        entry.target.classList.toggle("visible", entry.isIntersecting)
+        entry.target.classList.toggle("visible", entry.isIntersecting);
+        entry.target.classList.toggle("not-visible", !entry.isIntersecting);
     }
 }, options)
 
@@ -30,7 +31,7 @@ export default function About({ id }: { id: string }) {
 
 function AboutBlock({ children, title, iconSrc, className }: React.PropsWithChildren & { title: string, iconSrc: string, className?: string }) {
     return (
-        <div className={twMerge("h-40 bg-slate-600 w-full rounded p-2 overflow-auto flex flex-col group-[.visible]:translate-x-0 -translate-x-full transition-all duration-500 ease-in-out group-[.visible]:opacity-100 opacity-0", className)} >
+        <div className={twMerge("h-40 bg-slate-600 w-full rounded p-2 overflow-auto flex flex-col group-[.visible]:translate-x-0 -translate-x-full transition-all duration-500 ease-in-out group-[.visible]:opacity-100 opacity-0 group-[.not-visible]:transition-[none]", className)} >
             <div className="flex justify-between">
                 <h2 className="text-green-500 text-xl">{title}</h2>
                 <img src={iconSrc} alt="icon" className="h-8 w-auto" />

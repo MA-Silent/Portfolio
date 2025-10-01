@@ -3,7 +3,7 @@ export type project = {
   "title": string
   "link": string
   "group"?: boolean
-  "description"?: string
+  "description": string
 };
 
 export type skill = {
@@ -12,10 +12,11 @@ export type skill = {
 }
 
 export const projects: Array<project> = [
-    {image: "projects/1.png", title: "React + Express + mySQL", link: "https://github.com/MA-Silent/FlexIntro/"},
-    {image: "projects/2.png", title: "Portfolio", link: "https://github.com/MA-Silent/Portfolio"},
-    {image: "projects/4.png", title: "ExpressJs API + mySQL", link: "https://github.com/MA-Silent/FLEX-expressjs-Api/", description: "A simple website made wtih React for the frontend and ExpressJS + mySQL for the backend, that allows the user to drag the images on the page to another snap point"},
+    {image: "projects/1.png", title: "React + Express + mySQL", link: "https://github.com/MA-Silent/FlexIntro/", description: "A simple website made wtih React for the frontend and ExpressJS + mySQL for the backend, that allows the user to drag the images on the page to another snap point"},
+    {image: "projects/2.png", title: "Portfolio", link: "https://github.com/MA-Silent/Portfolio", description: "This website made for me to get a job"},
+    {image: "projects/4.png", title: "ExpressJs API + mySQL", link: "https://github.com/MA-Silent/FLEX-expressjs-Api/", description: "An express API that connects to a mySQL database"},
     {image: "projects/3.png", title: "React Basics", link: "https://github.com/MA-Silent/M8-React/", description:"Hello World"},
+    {image: "logos/DiscordJS.png", title: "Discord.js Bot", link:"https://github.com/Ben200002/Discord.js", description: "A Discord bot made with the Discord.js library that i made because i wanted to challenge my javascript skill"}
 ]
 
 export const skills: Array<skill> = [
