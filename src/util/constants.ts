@@ -31,7 +31,7 @@ export const skills: Array<skill> = [
     {title: "Python", imageSrc: "logos/pythonlogo.svg"},
     {title: "Git", imageSrc: "logos/gitlogo.svg"},
     {title: "ExpressJS", imageSrc: "logos/expresslogo.svg"},
-    {title: "Tailwind CSS", imageSrc: "logos/tailwind.svg"},
+    {title: "Tailwind CSS", imageSrc: "logos/tailwindlogo.svg"},
     {title: "Docker CLI", imageSrc: "logos/dockerlogo.svg"},
     {title: "HTML", imageSrc: "logos/htmllogo.svg"},
     {title: "CSS", imageSrc: "logos/csslogo.svg"},
