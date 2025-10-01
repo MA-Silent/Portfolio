@@ -2,6 +2,8 @@ export type project = {
   "image": string
   "title": string
   "link": string
+  "group"?: boolean
+  "description"?: string
 };
 
 export type skill = {
@@ -13,7 +15,7 @@ export const projects: Array<project> = [
     {image: "projects/1.png", title: "React + Express + mySQL", link: "https://github.com/MA-Silent/FlexIntro/"},
     {image: "projects/2.png", title: "Portfolio", link: "https://github.com/MA-Silent/Portfolio"},
     {image: "projects/4.png", title: "ExpressJs API + mySQL", link: "https://github.com/MA-Silent/FLEX-expressjs-Api/"},
-    {image: "projects/3.png", title: "React Basics", link: "https://github.com/MA-Silent/M8-React/"},
+    {image: "projects/3.png", title: "React Basics", link: "https://github.com/MA-Silent/M8-React/", description:"Hello World", group:true},
 ]
 
 export const skills: Array<skill> = [

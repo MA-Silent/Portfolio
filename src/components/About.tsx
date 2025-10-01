@@ -6,7 +6,6 @@ const options : IntersectionObserverInit = {root:null, rootMargin:"0px", thresho
 
 const observer = new IntersectionObserver((entries)=>{
     for (const entry of entries){
-        console.log(entry.isIntersecting)
         entry.target.classList.toggle("visible", entry.isIntersecting)
     }
 }, options)
