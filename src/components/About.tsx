@@ -46,7 +46,7 @@ function AboutBlock({ children, title, iconSrc, className }: React.PropsWithChil
 function PersonAbout() {
     return (
         <section className="flex flex-1 flex-col snap-center md:snap-align-none md:h-full justify-center items-center gap-5">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3m972e8FEvBi7ETC03avlJcZDg8nT9dWLSw&s" alt="profilePicture" className="size-80 rounded-full object-cover object-top" />
+            <img src="pfp.png" alt="profilePicture" className="size-80 rounded-full object-cover object-top" />
             {
                 AboutText.split("\n\n").map((paragraph) =>{
                     return <p key={paragraph}>{paragraph}</p>
