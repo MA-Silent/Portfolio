@@ -11,6 +11,7 @@ export default function Header() {
                     <NavButton href="#projects"><button className="h-full w-full text-left" onClick={()=>{setChecked(false)}}>Projects</button></NavButton>
                     <NavButton href="#about"><button className="h-full w-full text-left" onClick={()=>{setChecked(false)}}>About</button></NavButton>
                     <NavButton href="#skills"><button className="h-full w-full text-left" onClick={()=>{setChecked(false)}}>Skills</button></NavButton>
+                    <NavButton href="#contact" children={"Contact"} />
                 </nav>
             </div>
             <header className="w-full h-fit sticky top-0 px-5 pt-1 z-10">
@@ -23,6 +24,7 @@ export default function Header() {
                         <NavButton href="#projects" children={"Projects"} />
                         <NavButton href="#about" children={"About"} />
                         <NavButton href="#skills" children={"Skills"} />
+                        <NavButton href="#contact" children={"Contact"} />
                     </nav>
 
                     <div className="size-8 relative sm:hidden">

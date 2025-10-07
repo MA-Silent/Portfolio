@@ -3,10 +3,10 @@ import { useForm, ValidationError } from '@formspree/react';
 export default function Contact() {
   const [state, handleSubmit] = useForm("mldpwrzy");
   if (state.succeeded) {
-    return <section className="h-screen flex justify-center items-center snap-center"><p>Thanks for reaching out!</p></section>;
+    return <section className="h-screen flex justify-center items-center snap-center" id='contact'><p>Thanks for reaching out!</p></section>;
   }
   return (
-    <section className="h-screen flex justify-center items-center snap-center">
+    <section className="h-screen flex justify-center items-center snap-center" id='contact'>
       <form onSubmit={handleSubmit} className='grid sm:grid-cols-2 grid-rows-4 gap-4'>
         <input
           id='name'
