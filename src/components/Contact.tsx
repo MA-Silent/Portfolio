@@ -68,8 +68,8 @@ export default function Contact() {
           errors={state.errors}
         />
 
-        <button type="submit" disabled={state.submitting} className='sm:row-start-4 col-start-2 bg-white text-black min-h-1/2 min-w-1/2 ml-auto rounded not-sm:col-start-1'>
-          Submit
+        <button type="submit" disabled={state.submitting} className='sm:row-start-4 col-start-2 bg-white text-black min-h-1/2 min-w-1/2 ml-auto rounded not-sm:col-start-1 justify-center flex items-center'>
+          {state.submitting ? <div className='size-6 animate-spin border-t-2 rounded-t-full border-t-sky-500' /> : "Submit"}
         </button>
 
       </form>
